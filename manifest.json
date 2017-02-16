@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name":"Productify",
+  "description":"Beta version of extension",
+  "version": "1.2",
+  "browser_action":{
+    "default_title":"productiFY",
+    "default_icon":"index.png",
+    "default_popup":"popup.html"
+  },
+
+   "content_scripts": [
+    {
+      "matches": ["https://*/*","http://*/*"],   
+      "js": ["jquery.min.js","insert.js"]
+    }
+  ],
+  "background":{
+    "scripts":["event_script.js"],
+    "persistent":true
+  },
+
+  "permissions":["tabs","storage","alarms"]
+}

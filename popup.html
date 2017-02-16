@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time It!</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-width:500px;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="text-center">
+
+<form name="add_remove" class="form-horizontal" id="form1">
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-2">
+        <label class="control-label">URL:</label>
+            </div>
+        <div class="col-sm-5">
+        <input type="text" name="Url" class="form-control">
+            </div>
+    </div>
+    <div class="form-group text-center">
+        <div class="col-sm-offset-2 col-sm-2">
+        <input type="radio" name="opt" value="Block"> Add
+            </div>
+        <div class="col-sm-2">
+        <input type="radio" name="opt" value="Remove"> Remove
+            </div>
+
+
+    </div>
+    <div class="form-group text-center">
+        <button class="btn btn-success" id="submitform">Submit</button>
+    </div>
+
+
+</form>
+    </div>
+
+<div class="row text-center">
+    <form id="form2" name="time_form">
+        <div class="form-group">
+            <input type="number" placeholder="Enter Alarm Time" name="time">
+            <button class="btn btn-warning" id="submitform2">Submit</button>
+            </div>
+        </form>
+</div>
+
+<br>
+<br>
+<div class="row text-center">
+<ul class="blocked list-unstyled">
+
+
+
+
+</ul>
+
+</div>
+</body>
+</html>
